@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Logged out</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="LoginScreen.css">
+  </head>
+
+  <body id=logout>
+    <div>
+      <img src="Minecraft.png" alt="Minecraft Schriftzug">
+      <p></p>
+      <em>Email Address or Username:</em>
+      <form>
+        <input type="text" id="username">
+        <p class="annotation">(Which do I use?)</p>
+      </form>
+      <em>Password:</em>
+      <form>
+        <input type="password" id="password">
+        <p class="annotation">(Forgot Password?)</p>
+
+        <p>
+          <button type="button" onclick="displayPassword()">Register</button>
+          <button type="button" onclick="displayPassword()">Log In</button>
+        </p>
+      </form>
+    </div>
+    <script src="LoginScreen.js"></script>
+  </body>
+</html>

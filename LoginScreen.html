@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="LoginScreen.css">
+    <title>Minecraft Launcher 1.5.3</title>
+  </head>
+
+  <body id="login">
+    <div>
+      <img src="Minecraft.png" alt="Minecraft Schriftzug">
+      <p>
+        You're already logged in as 2 different users.<br>
+        You may use one of these accounts and skip authentication.
+      </p>
+
+      <em>Existing User:</em>
+      <form>
+        <select name="existing_user">
+          <option value="1">oidafux</option>
+        </select>
+
+        <button type="button" onclick="alert('Error\nThe account is not open')">Play</button>
+        <button type="button" onclick="window.location.href='LogOut.html'">Log Out</button>
+      </form>
+      <p class="underlined">Alternatively, log in with a new account below:</p>
+      <em>Email Address or Username:</em>
+      <form>
+        <input type="text" id="username">
+        <p class="annotation">(Which do I use?)</p>
+      </form>
+      <em>Password:</em>
+      <form>
+        <input type="password" id="password">
+        <p class="annotation">(Forgot Password?)</p>
+
+        <p>
+          <button type="button" onclick="displayPassword()">Register</button>
+          <button type="button" onclick="displayPassword()">Log In</button>
+        </p>
+      </form>
+    </div>
+    <script src="LoginScreen.js"></script>
+  </body>
+</html>
